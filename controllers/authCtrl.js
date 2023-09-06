@@ -40,7 +40,7 @@ exports.authCtrl = {
         from: "eliyahumeir12@gmail.com ",
         to: user.email,
         subject: "Email Verification",
-        html: `<p>Please click the following link to verify your email:</p><a href="${SECRET.URL_BASED}/verify/${verificationToken}">Verify Email</a>`,
+        html: `<p>Please click the following link to verify your email:</p><a href="${SECRET.URL_BASED}verify/${verificationToken}">Verify Email</a>`,
       };
 
       transporter.sendMail(mailOptions, (error, info) => {
